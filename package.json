@@ -7,7 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:angular-server-side-rendering": "node dist/angular-server-side-rendering/server/server.mjs"
+    "serve:ssr:angular-server-side-rendering": "node dist/angular-server-side-rendering/server/server.mjs",
+    "dev:ssr": "node dist/angular-server-side-rendering/server/main.js",
+    "build:ssr": "ng build && ng run angular-server-side-rendering:server",
+    "prerender": "ng run angular-server-side-rendering:prerender"
   },
   "private": true,
   "dependencies": {
